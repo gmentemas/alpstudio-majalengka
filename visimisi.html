@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Majalengka</title>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <div class="navbar">
+          <div class="logo"><a href="">LOGO</a></div>
+          <ul class="links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="visimisi.html">Visi-Misi</a></li>
+            <li><a href="kampanye.html">Kampanye</a></li>
+            <li><a href="suara.html">Suara</a></li>
+            <li><a href="dukung.html">Dukung</a></li>
+          </ul>
+          <a href="" class="action_btn">Dukung</a>
+          <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="visimisi.html">Visi-Misi</a></li>
+          <li><a href="kampanye.html">Kampanye</a></li>
+          <li><a href="suara.html">Suara</a></li>
+          <li><a href="dukung.html">Dukung</a></li>
+          <li><a href="" class="action_btn">Dukung</a></li>
+        </div>
+      </header>
+      <div class="tengah">
+        <p>VISI-MISI</p>
+      </div>
+    </div>
+    <div class="grid animate__animated animate__fadeInUp" style="margin-top: 20px;">
+      <div class="column">
+        <img src="img/eman1.jpg">
+      </div>
+      <div class="column">
+        <h3 style="color: black;">VISI</h3>
+        <p>Terwujudnya daerah kita Sebagai Rumah Bersama Yang Cerdas, Sejahtera, Berdaya Saing, Menghargai Perbedaan dan Memiliki Jiwa Gotong Royong”</p>
+        <h3 style="color: black;">MISI</h3>
+        <p>
+          1. Menciptakan tata kelola pemerintahan yang baik dengan dukungan teknologi untuk meningkatkan kualitas pelayanan kepada masyarakat.<br>
+          2. Meningkatkan kualitas sumber daya manusia melalui pelayanan pendidikan dan kesehatan yang berkualitas dan terjangkau.<br>
+          3. Membangun perekonomian yang kreatif dan inovatif untuk meningkatkan kesejahteraan.<br>
+          4. Meningkatkan ketahanan masyarakat dalam menghadapi berbagai macam ancaman dan bencana.<br>
+          5. Membangun sarana dan prasarana yang memadai untuk mendukung terwujudnya kabupaten cerdas.<br>
+          6. Menguatkan budaya masyarakat yang saling menghargai dan jiwa gotong royong.
+        </p>
+        
+      </div>
+      <div class="column">
+        <h3 style="color: black;">Bergabunglah bersama kami dalam perjuangan untuk masa depan yang lebih baik Bagi Komunitas Kami</h3>
+        <p style="color: black;">Membangun elit yang adipik.Komodo ligula eget dolor Aenea.Massa Aenea.Dengan masyaraka</p>
+        <div class="gridbaru">
+          <p><i class="fa-solid fa-circle-check" style="color:green;"></i>Proyek Media Wakil Jaksa Agung</p>
+          <p><i class="fa-solid fa-circle-check" style="color:green;"></i>Sekolah Hukum dan Pengacara Hak Sipil.</p>
+          <p><i class="fa-solid fa-circle-check" style="color:green;"></i>Direktur komunitas berkembang.</p>
+          <p><i class="fa-solid fa-circle-check" style="color:green;"></i> Mengambil Jurusan Ilmu Politik.</p>
+        </div>
+        <div class="btn">
+          <button>Lebih Banyak Tentang Kami <i class="fa-regular fa-circle-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMennu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function () {
+        dropDownMennu.classList.toggle('open')
+        const isOpen =  dropDownMennu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
