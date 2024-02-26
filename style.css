@@ -412,7 +412,8 @@ header{
     margin: 0;
   }
   .cardekon{
-    margin-left: 39%;
+    margin-left: 37%;
+    margin-top: 10px;
   }
 
   .cardkampanye{
@@ -429,6 +430,7 @@ header{
   }
   .card_bawah2{
     width: 350px;
+    margin: 10px;
 
  }
   .header{
