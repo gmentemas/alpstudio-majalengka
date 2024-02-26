@@ -93,9 +93,13 @@ header{
   margin-right:100px;
   column-gap: 30px;
 }
-.dukung img{
-  width: 80px;
-  height: 80px;
+.grid .dukung img{
+  width: 50px;
+  height: 50px;
+}
+.grid11 .dukung img{
+  width: 50px;
+  height: 50px;
 }
 .grid img{
   width:400px;
@@ -285,15 +289,13 @@ header{
   text-align: center;
 }
 .card_bawah2{
-  width:auto;
-  height:auto;
+  width:600px;
+  height:50%;
   border-radius:20px;
   box-shadow: 0 10px 10px rgba(0,0,0,.1);
   background-color:#2554C7;
-  padding-top: 10px;
-}
-.card_bawah2 table{
-  margin-left: 30px;
+  padding:10px;
+  align-items: center;
 }
 .card_bawah2 p{
   font-size: 20px;
@@ -311,8 +313,8 @@ header{
   margin:10px;
 }
 .cardhitung {
-  width:75px;
-  height:75px;
+  width:67px;
+  height:67px;
   grid-column: span 8;
   margin: 10px 0;
   border-radius: 15px;
@@ -379,7 +381,6 @@ header{
   }
     .grid11{
     padding: 0;
-    grid-template-columns: repeat(1,1fr);
     margin: 0;
   }
 }
@@ -413,11 +414,7 @@ header{
   .cardekon{
     margin-left: 39%;
   }
-  .grid11{
-    padding: 0;
-    grid-template-columns: repeat(1,1fr);
-    margin: 0;
-  }
+
   .cardkampanye{
     width: 100%;
   }
@@ -430,10 +427,10 @@ header{
     margin: 30px;
     width: 300px;
   }
-  .card_bawah2 img{
-    width: 100%;
-    margin-left: 0;
-  }
+  .card_bawah2{
+    width: 350px;
+
+ }
   .header{
     background-position: left;
   }
